@@ -1,1 +1,59 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Malla Curricular Medicina Veterinaria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Malla Curricular Medicina Veterinaria</h1>
+  </header>
+
+  <main>
+    <section class="year" id="year1">
+      <h2>Año 1</h2>
+      <ul>
+        <li data-codigo="MBIO101" data-creditos="6" data-prerrequisitos="">
+          Introducción a la Biología (MBIO101) - 6 créditos
+        </li>
+        <li data-codigo="MQUM101" data-creditos="6" data-prerrequisitos="">
+          Química General (MQUM101) - 6 créditos
+        </li>
+        <li data-codigo="MIMU101" data-creditos="7" data-prerrequisitos="">
+          Introducción a la Microbiología (MIMU101) - 7 créditos
+        </li>
+      </ul>
+    </section>
+
+    <section class="year" id="year2">
+      <h2>Año 2</h2>
+      <ul>
+        <li data-codigo="MANA201" data-creditos="7" data-prerrequisitos="MBIO101,MQUM101">
+          Anatomía Animal (MANA201) - 7 créditos
+        </li>
+        <li data-codigo="MIFI201" data-creditos="6" data-prerrequisitos="MIMU101">
+          Fisiología (MIFI201) - 6 créditos
+        </li>
+        <li data-codigo="MINU202" data-creditos="5" data-prerrequisitos="MIMU101">
+          Nutrición Animal (MINU202) - 5 créditos
+        </li>
+      </ul>
+    </section>
+
+    <!-- Agrega más años y ramos aquí siguiendo el mismo formato -->
+
+  </main>
+
+  <aside id="detalle">
+    <h3>Detalle del ramo</h3>
+    <p><strong>Código:</strong> <span id="detalle-codigo">-</span></p>
+    <p><strong>Créditos:</strong> <span id="detalle-creditos">-</span></p>
+    <p><strong>Prerrequisitos:</strong> <span id="detalle-prerrequisitos">-</span></p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
