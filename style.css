@@ -1,4 +1,3 @@
-/* Paleta pastel */
 :root {
   --color-fondo: #f9f8f6;
   --color-primario: #a8dadc; /* azul pastel */
@@ -9,7 +8,6 @@
   --color-detalle-borde: #d3d3d3;
 }
 
-/* Reset básico */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -55,6 +53,13 @@ main {
   text-align: center;
 }
 
+.year h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
 .year ul {
   list-style: none;
 }
@@ -74,7 +79,6 @@ main {
   color: white;
 }
 
-/* Panel detalle */
 #detalle {
   margin-top: 30px;
   background-color: var(--color-detalle-fondo);
@@ -94,4 +98,3 @@ main {
   margin-bottom: 8px;
   font-weight: 500;
 }
-
